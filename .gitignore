@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+
+# --- Research data (git에 절대 올리지 않는다) ---
+# 판결문 원문 · 코딩시트 · 논문 원본 등 개인/저작권 자료
+data/
+output/
+*.xlsx
+*.xls
+*.pdf
+*.docx
+*.dotx
+
+# 연구계획서 텍스트 사본 (커밋 여부는 연구자 판단)
+docs/proposal.md
+
+# 도구가 생성하는 백업
+*.bak
