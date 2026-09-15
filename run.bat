@@ -26,14 +26,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-if "%ANTHROPIC_API_KEY%"=="" (
-    echo.
-    echo   [!]  ANTHROPIC_API_KEY 환경변수가 설정되어 있지 않습니다.
-    echo        setx ANTHROPIC_API_KEY "sk-ant-..."  후 새 창에서 다시 실행하세요.
-    echo.
-)
-
 echo [run] GUI 실행
-python -m paper_writer
+start "" .venv\Scripts\pythonw.exe -m paper_writer
 
 endlocal
